@@ -16,8 +16,9 @@
             errorMessage.textContent = '';
             dataMessage.innerHTML = '<span>Loading...</span>';
             dataMessage.innerHTML = `<div><p>Location: &nbsp;${data.forecast.location.name}</p>\n
+            <p>Country: &nbsp; ${data.forecast.location.country}</p>
             <p>Weather: &nbsp;${data.forecast.weather_info.description}</p>\n
-            <p>Temperature: &nbsp;${data.forecast.weather_info.temperature}</p></div>`;
+            <p>Temperature: &nbsp;${data.forecast.weather_info.temperature} degrees F, but feels like ${data.forecast.weather_info.feelslike} degrees F.</p></div>`;
           }
         })
     })
