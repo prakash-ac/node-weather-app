@@ -5,7 +5,7 @@
     const errorMessage = document.querySelector('#error');
     const dataMessage = document.querySelector('#data');
     const location = document.querySelector('input').value;
-    fetch(`http://localhost:3000/weather?address=${location}`)
+    fetch(`/weather?address=${location}`)
     .then(response => {
       response.json()
         .then((data) => {
